@@ -30,11 +30,13 @@ nav a {
 }
 
 nav a:hover {
+    background-color: #316494;
     color: #FFFFFF;
 }
 
 .home-title {
-    color: #FFFFFF;
+    color: #316494;
+    /* color: #FFFFFF; */
 }
 
 main h2 {
@@ -42,7 +44,8 @@ main h2 {
 }
 
 h4 {
-    color: #FFFFFF
+    color: #316494
+    /* color: #FFFFFF */
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -57,14 +60,11 @@ main section {
     text-align: center;
 }
 
-nav a:hover {
-    background-color: #316494;
-    color: #FFFFFF;
-}
-
 .book, .join {
-    background-color: #FFFFFF;
-    color: #316494;
+    background-color: #60A3E0;
+    /* background-color: #FFFFFF; */
+    color: #0d1a26;
+    /* color: #316494; */
     text-decoration: none;
 }
 
