@@ -145,7 +145,7 @@ main section img {
 }
 
 footer {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     background-color: #0d1a26;
     color: #FFFFFF;
     padding: 25px 50px;
@@ -166,7 +166,8 @@ footer p {
 }
 
 footer p a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: none;
 }
 
 footer .social img {
