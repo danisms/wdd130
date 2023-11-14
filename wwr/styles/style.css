@@ -5,6 +5,10 @@
     --paragraph-font: Inter, Arial, Helvetica, sans-serif;
 }
 
+#menu-icon {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
@@ -34,9 +38,17 @@ header {
     background-color: rgba(13, 26, 38, 0.8);
     display: grid;
     grid-template-columns: 150px auto;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0px;
 }
 
 #selected {
+    background-color: #316494;
+    color: #FFFFFF;
+}
+.selected {
     background-color: #316494;
     color: #FFFFFF;
 }
@@ -76,7 +88,7 @@ header {
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 130px;
+    margin-top: 250px;
     background-color: rgba(13, 26, 38, 0.5);
     border-radius: 10px;
 }
@@ -269,6 +281,7 @@ footer .social img {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 95px;
 }
 
 #faqs-hero-box {
@@ -340,16 +353,62 @@ footer .social img {
 
 /* MEDIA QUERY*/
 @media screen and (max-width: 900px) {
+    header {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        top: 0px;
+    }
+    #menu-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #60A3E0;
+        border-radius: 100%;
+        position: relative;
+        left: 80%;
+        top: 10px;
+        /* transition: background-color 0.2s; */
+    }
+    #menu-icon img {
+        width: 100%;
+    }
+    /* #menu-icon:hover {
+        background-color: #FFFFFF;
+    } */
+
     #hero, .home-grid {
         display: block;
         height: auto;
     }
+    #selected {
+        background-color: #60A3E0;
+    }
+    .selected {
+        background-color: #60A3E0;
+    }
     nav, footer {
         flex-direction: column;
     }
+
+    nav {
+        background-color: #316494;
+        position: fixed;
+        width: 30%;
+        left: 100%;
+        top: 70px;
+        z-index: 2;
+        transition: left 0.2s linear;
+    }
+    #contact-us {
+        margin-bottom: 800px;
+    }
     nav a {
-        display: block;
+        display: inline-block;
         padding: 15px;
+    }
+    nav a:hover {
+        background-color: #60A3E0;
     }
     #hero {
         margin-top: 0;
@@ -383,6 +442,7 @@ footer .social img {
 
 /* FAQs PAGE */
 #faqs-hero {
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
@@ -468,5 +528,16 @@ footer .social img {
     grid-column: 1/3;
     grid-row: 1/3;
     align-self: center;
+}
+/* Contact Us */
+.contact-box {
+    width: 600px;
+    background-color: rgba(51, 101, 148, 0.2);
+    background-color: #0d1a26;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+textarea {
+    height: 200px;
 }
 }

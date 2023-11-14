@@ -1,0 +1,79 @@
+:root {
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Petit Formal Script";
+    --paragraph-font: Inter, Helvetica, sans-serif;
+}
+.contact-box {
+    width: 600px;
+    height: 660px;
+    background-color: rgba(51, 101, 148, 0.2);
+    margin:0 auto;
+    border-radius: 15px;
+    padding-top: 1px;
+    margin-top: 100px;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+li {
+    color: #316494;
+}
+
+label h4 {
+    display: inline-block;
+}
+
+input {
+    font-family: var(--paragraph-font);
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 65%;
+    height: 40px;
+    margin-left: 40px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    padding: 5px;
+    border-style: none;
+}
+
+#msg{
+    font-family: var(--paragraph-font);
+    background-color: rgb(255, 255, 255, 0.8);
+    font-size: 0.8em;
+    border-radius: 10px;
+    padding: 10px;
+    width: 63%;
+    height: 200px;
+    border-style: none;
+    position: relative;
+    top: -60px;
+    margin-left: 120px;
+}
+
+input:hover, #msg:hover {
+    background-color: #FFFFFF;
+}
+
+button {
+    position: relative;
+    top: -80px;
+    left: 42%;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+    z-index: 3;
+}
+.moveDown {
+    margin-top: 3em;
+}

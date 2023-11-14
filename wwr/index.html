@@ -13,12 +13,17 @@
             <a href="index.html" id="logo_link">
                 <img class="logo" src="images/logo.png" alt="Amusement Raft Logo">
             </a>
-            <nav>
+            <nav id="navigation">
                 <a href="index.html" id="selected">Home</a>
                 <a href="faqs.html">FAQs</a>
                 <a href="site-plan-rafting.html">Site Plan</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="contactus.html" id="contact-us">Contact Us</a>
             </nav>
+            <a onclick="changeBar()" href="#">
+            <div id="menu-icon">
+                <img src="images/menu_bar_round.png" id="menu_img" alt="menu-icon">
+            </div>
+            </a>
         </header>
         <div id="hero">
             <div id="hero-box">
@@ -74,5 +79,6 @@
     
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
