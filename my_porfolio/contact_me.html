@@ -86,11 +86,11 @@
                     data-email="danielcopute@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbxshFOI02RWVgVv902x0ZHzGLeesCyRG38HbG50wrmnCDOUvmFNnhlUUxmbdcq8U316Kg/exec">
 
-                    <textarea id="contact-message-box" placeholder="Do you have a question for me?"></textarea>
-                    <h4>Name: </h4><input type="text" placeholder="Full-Name">
-                    <h4>Email: </h4><input type="email" placeholder="youremail@example.com">
+                    <textarea id="contact-message-box" name="Request" placeholder="Do you have a question for me?" required></textarea>
+                    <h4>Name: </h4><input type="text" name="Name" placeholder="Full-Name" required>
+                    <h4>Email: </h4><input type="email" name="Email" placeholder="youremail@example.com" required>
                     <!--Submit button-->
-                    <button id="submit-button">SEND</button>
+                    <button type="submit" id="submit-button">SEND</button>
                     <!-- Customise the Thankyou Message People See when they submit the form: -->
                     <div class="thankyou_message" id="message-display" style="display:none;">
                         <h2>Sent successfully!</h2>
