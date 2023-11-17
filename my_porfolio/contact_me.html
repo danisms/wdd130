@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta title="author" name="Daniel Chukwunalu Opute">
+    <meta name="author" content="Daniel C. Opute">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link type="image/png" rel="icon" href="images/logo.png">
@@ -40,58 +40,67 @@
             <!--SECTION 1 BOX-->
             <div class="contact-content-box" id="info-box">
                 <h3 class="contact-h3">Contact Info</h3>
-                <section class="contact-content" id="call-content">
+                <div class="contact-content" id="call-content">
                     <a href="tel:+2348073956165">
                         <img src="images/contact_me/dark_phone.png" alt="phone">
                         +234-8073956165
                     </a>
-                </section>
-                <section class="contact-content" id="email-content">
-                    <a href="mailto: danielcopute@gmail.com">
+                </div>
+                <div class="contact-content" id="email-content">
+                    <a href="mailto:danielcopute@gmail.com">
                         <img src="images/contact_me/email.png" alt="email">
                         danielcopute@gmail.com
                     </a>
-                </section>
-                <section class="contact-content" id="facebook-content">
+                </div>
+                <div class="contact-content" id="facebook-content">
                     <a href="https://www.facebook.com/Daniel.C.Opute/">
                         <img src="images/contact_me/facebook.png" alt="facebook icon">
                         @facebook.com
                     </a>
-                </section>
-                <section class="contact-content" id="linkedin-content">
+                </div>
+                <div class="contact-content" id="linkedin-content">
                     <a href="https://www.linkedin.com/in/danielopute/">
                         <img src="images/contact_me/linkedin.png" alt="linkedin icon">
                         @linkedin.com
                     </a>
-                </section>
-                <section class="contact-content" id="upwork-content">
+                </div>
+                <div class="contact-content" id="upwork-content">
                     <a href="https://www.upwork.com/services/product/development-it-figma-or-psd-converted-to-a-tasteful-refined-responsive-website-design-1568348217643474944">
                         <img src="images/contact_me/upwork.png" alt="upwork icon">
                         @upwork.com
                     </a>
-                </section>
-                <section class="contact-content" id="whatsapp-content">
+                </div>
+                <div class="contact-content" id="whatsapp-content">
                     <a href="https://wa.me/+2348073956165">
                         <img src="images/contact_me/whatsapp.jpg" alt="whatsapp icon">
                         WhatsApp.com
                     </a>
-                </section>
+                </div>
             </div>
             <!--VERTICAL LINE DEMARCATOR-->
             <div id="vertical-line"></div>
             <!--SECTION 2 BOX-->
-            <div class="contact-content-box" id="contact-message-box">
+            <div class="contact-content-box" id="contact-box">
                 <h3 class="contact-h3">Drop a Message</h3>
                 <form id="form" class="gform pure-form pure-form-stacked" method="POST"
                     data-email="danielcopute@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbxshFOI02RWVgVv902x0ZHzGLeesCyRG38HbG50wrmnCDOUvmFNnhlUUxmbdcq8U316Kg/exec">
 
                     <textarea id="contact-message-box" placeholder="Do you have a question for me?"></textarea>
-                    <h4>Name: </h4><input type="text" placeholder="Full-Name"/>
-                    <h4>Email: </h4><input type="email" placeholder="youremail@example.com"/>
+                    <h4>Name: </h4><input type="text" placeholder="Full-Name">
+                    <h4>Email: </h4><input type="email" placeholder="youremail@example.com">
                     <!--Submit button-->
-                    <button id="submit-button">SUBMIT</button>
+                    <button id="submit-button">SEND</button>
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <div class="thankyou_message" id="message-display" style="display:none;">
+                        <h2>Sent successfully!</h2>
+                        <p>
+                            Your message will be reviewed and feedback will be sent to your provided email address. 
+                            Thank you for contacting me.
+                        </p>
+                    </div>
                 </form>
+
             </div>
         </main>
         <footer>
@@ -105,5 +114,6 @@
             </div>
         </footer>
     </div>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 </html>
