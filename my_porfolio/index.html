@@ -11,8 +11,15 @@
 <body>
     <div id="content">
         <header>
-            <img id="logo" src="images/logo.png" alt="danism-web logo" width="75" height="75">
-            <nav>
+            <a href="index.html" id="logo_link">
+                <img id="logo" src="images/logo.png" alt="danism-web logo" width="75" height="75">
+            </a>
+            <a onclick="changeBar()" href="#" id="menu-button">
+                <div id="menu-icon">
+                    <img src="images/menu_bar_round.png" id="menu_img" alt="menu-icon" width="60" height="60">
+                </div>
+            </a>
+            <nav id="navigation">
                 <a href="index.html" id="selected">HOME</a>
                 <a href="projects.html">PROJECTS</a>
                 <a href="portfolio.html">PORTFOLIO</a>
@@ -26,38 +33,66 @@
             </div>
             <section class="home-hero-msg">
                 <h1 class="home-title">WELCOME TO DANISM-WEB</h1>
-                <h2>Imagination is The Beginning of Creation</h2>
-                <div class="button-box">
-                    <a href="contact_me.html">Contact Me</a>
-                </div>
+                <h3>Imagination is The Beginning of Creation</h3>
+                <a href="contact_me.html" class="a-button">
+                    <div class="button-box">Contact Me</div>
+                </a>
             </section>
         </div>
         <main class="home-grid">
             <!--CREATING SUB-PAGE BOXES-->
             <!--Projects Sub-page Box-->
-            <div class="sub-page-box" id="project-box">
-                <div class="img-box">
-                    <img src="images/home/coding_in_prog.jpg" alt="computer screen, coding in progress">
+            <a href="projects.html" class="sub-page-link" onmouseover="displayProjectDes()" onmouseleave="removeProjectDes()">
+                <div class="sub-page-box" id="project-box">
+                    <div class="description-box">
+                        <div class="description" id="project-description">
+                            <p>
+                                A selection for my designs, working projects, previous works, and lots more.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/coding_in_prog.jpg" alt="computer screen, coding in progress">
+                        </div>
+                    </div>
+                    <h2>Projects</h2>
                 </div>
-                <h3>Projects</h3>
-            </div>
+            </a>
             <!--Portfolio Sub-page Box-->
-            <div class="sub-page-box" id="portfolio-box">
-                <div class="img-box">
-                    <img src="images/home/portfolio.jpg" alt="portfolio template">
+            <a href="portfolio.html" class="sub-page-link" onmouseover="displayPortfolioDes()" onmouseleave="removePortfolioDes()">
+                <div class="sub-page-box" id="portfolio-box">
+                    <div class="description-box">
+                        <div class="description" id="portfolio-description">
+                            <p>
+                                Take a quick view of my resume, and decide if you would like to work with me.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/portfolio.jpg" alt="portfolio template">
+                        </div>
+                    </div>
+                    <h2>Portfolio</h2>
                 </div>
-                <h3>Portfolio</h3>
-            </div>
+            </a>
             <!--About-me Sub-page Box-->
-            <div class="sub-page-box" id="about-me-box">
-                <div class="img-box">
-                    <img src="images/home/daniel_opute.jpg" alt="photo of me(Daniel C. Opute)">
+            <a href="about_me.html" class="sub-page-link" onmouseover="displayAboutMeDes()" onmouseleave="removeAboutMeDes()">
+                <div class="sub-page-box" id="about-me-box">
+                    <div class="description-box">
+                        <div class="description" id="about-me-description">
+                            <p>
+                                Get most of the information you would want to know about me, 
+                                i.e., my full name, my background, my personality, past jobs, and more.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/daniel_opute.png" alt="photo of me(Daniel C. Opute)">
+                        </div>
+                    </div>
+                    <h2>About Me</h2>
                 </div>
-                <h3>About Me</h3>
-            </div>
+            </a>
             <!--CREATING PAGE SUMMARY BOX AND CONTENT-->
             <div class="summary-box">
-                <h4>About Danism-Web</h4>
+                <h3>About Danism-Web</h3>
                 <p>
                     This is my personal website for showcasing my web development skills, 
                     passion, and talents to all potential collaborators, most especially employers. 
@@ -68,14 +103,15 @@
                     of the website. Your satisfaction is my joy.
                 </p>
                 <div id="slide-box">
-                    <img src="images/home/slide-img/desktop-cal.png" alt="slide-images">
+                    <img src="images/home/slide-img/desktop-cal.png" alt="slide-images" id="img_1">
+                    <img src="images/home/slide-img/amusement-raft.png" alt="slide-images" id="img_2">
                 </div>
             </div>
         </main>
         <footer>
             <h4>Danism-Web &copy;2023 - Daniel C. Opute</h4>
-            <a href="site-plan.html"><h4>Site-Plan</h4></a>
-            <a href="contact_me.html"><h4>Contact-Me</h4></a>
+            <a href="site-plan.html"><h4 class="h4-inline">Site-Plan</h4></a>
+            <a href="contact_me.html"><h4 class="h4-inline">Contact-Me</h4></a>
             <div class="footer-logo">
                 <a target="_blank" href="https://www.facebook.com/Daniel.C.Opute/"><img src="images/icons/facebook.png" alt="Facebook icon"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/danielopute/"><img src="images/icons/linkin.png" alt="Linkedin icon"></a>
@@ -83,5 +119,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

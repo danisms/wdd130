@@ -10,10 +10,10 @@ function changeBar(){
         document.getElementById('navigation').style.left = '70%';
     } else {
         img = menuImg;
-        document.getElementById('navigation').style.left = '100%'
+        document.getElementById('navigation').style.left = '100%';
     }
 
-    getImg = document.getElementById('menu_img').src = img
+    getImg = document.getElementById('menu_img').src = img;
 }
 
 // prompt('hello')
