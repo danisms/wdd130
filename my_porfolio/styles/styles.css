@@ -18,8 +18,6 @@ img {
     display: block;
     margin: 0;
 }
-
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -400,13 +398,37 @@ footer .h4-inline {
 @media screen and (max-width: 489px) {
     /** Element Structuring */
 /** HEADER */
+header {
+    background-color: rgba(46, 0, 31, 0.8);
+    height: 60px;
+}
+#logo {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin: auto 15px;
+}
+#menu-button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #FF00AE;
+    border-radius: 100%;
+    align-self: center;
+    justify-self: right;
+    margin-right: 15%;
+}
+#menu_img {
+    width: 50px;
+    height: 50px;
+}
 nav {
     grid-column: 1/3;
     background-color: rgba(46, 0, 31, 0.9);
     display: inline-block;
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     justify-self: right;
     width: 100%;
     margin-top: 5px;
@@ -423,12 +445,57 @@ nav {
     grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-columns: 0.05fr 1fr 0.05fr;
 }
+#home-hero-box {
+    margin-top: 0px;
+    grid-row: 1/5;
+    grid-column: 1/4;
+    width: 100%;
+    background-color: gray;
+    height:720px;
+}
+.home-hero-msg {
+    background-color: rgba(46, 0, 31, 0.8);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.home-hero-msg h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#DFDAD7
+}
+.home-hero-msg h3 {
+    color: #1EDE01;
+    font-size: 0.8em;
+}
+.button-box {
+    margin: 0 auto;
+    background-color: #FF00AE;
+    width: 110px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #2F0020;
+    z-index: 1;
+    transition: transform, background-color, 0.2s;
+}
+
+.sub-page-box h2 {
+    color: #2F0020;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
 
 .summary-box h3 {
     margin-left: 0px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 .summary-box p {
-    font-size: 18px;
+    margin-top: -30px;
+    font-size: 16px;
+    color: white;
 }
 }
