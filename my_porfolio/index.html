@@ -34,7 +34,7 @@
             <section class="home-hero-msg">
                 <h1 class="home-title">WELCOME TO DANISM-WEB</h1>
                 <h3>Imagination is The Beginning of Creation</h3>
-                <a href="contact_me.html" class="a-button">
+                <a id="myBtn" class="a-button">
                     <div class="button-box">Contact Me</div>
                 </a>
             </section>
@@ -107,6 +107,41 @@
                     <img src="images/home/slide-img/amusement-raft.png" alt="slide-images" id="img_2">
                 </div>
             </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Contact Me</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="play()" id="form" class="gform pure-form pure-form-stacked" method="POST"
+                            data-email="danielcopute@gmail.com"
+                            action="https://script.google.com/macros/s/AKfycbxshFOI02RWVgVv902x0ZHzGLeesCyRG38HbG50wrmnCDOUvmFNnhlUUxmbdcq8U316Kg/exec">
+
+                            <h4>Name</h4>
+                            <input type="text" id="name" name="user_name" placeholder="Full Name" required>
+                
+                            <h4>Email</h4>
+                            <input type="email" id="mail" name="user_email" placeholder="example@email.com" required>
+
+                            <h4 id="msg-label">Message</h4>
+
+                            <textarea id="msg" name="user_message" placeholder="Enter your message here" required></textarea>
+                            <br>
+                            <button type="submit" class="book">Submit</button>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer"></div>
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <!-- <div class="thankyou_message" id="message-display" style="display:none;">
+                        <h1>Thank you for contacting me!<br>I'll get back to you shortly</h1>
+                    </div> -->
+
+                </div>
+            </div>
         </main>
         <footer>
             <h4>Danism-Web &copy;2023 - Daniel C. Opute</h4>
@@ -118,7 +153,24 @@
                 <a target="_blank" href="https://www.upwork.com/services/product/development-it-figma-or-psd-converted-to-a-tasteful-refined-responsive-website-design-1568348217643474944"><img src="images/icons/upwork.png" alt="Upwork logo"></a>
             </div>
         </footer>
-    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. I will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+    </div><script data-cfasync="false" src="form-submission-handler.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
