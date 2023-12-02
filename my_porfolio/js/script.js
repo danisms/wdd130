@@ -24,6 +24,15 @@ function removeAboutMeDes(){
     document.getElementById('about-me-description').style.top = '1000px';
 }
 
+function displayMainProjectDes(projectId) {
+    document.getElementById(projectId).style.top = 0;
+    document.getElementById(projectId).style.transitionProperty = top;
+    document.getElementById(projectId).style.transitionDuration = '0.5s';
+}
+function removeMainProjectDes(projectId) {
+    document.getElementById(projectId).style.top = '1000px'
+}
+
 j = 0;
 function runSlide() {
 	let images = [];
