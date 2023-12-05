@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #2F0020;
+    --secondary-color: #062A00;
+    --accent1-color: #FF00AE;
+    --accent2-color: #1EDE01;
+    --accent3-color: #FBF8F8;
+}
+#about-photo-box-2 {
+    display: none;
+}
+
+#about-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 85px;
+    /* height: 800px; */
+}
+#about-hero #about-hero-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#about-hero #about-hero-box img {
+    width: 100%;
+    height: 100%;
+
+}
+#about-hero .my-photo-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* background-color: red; */
+    width: 40%;
+    height: 70%;
+    z-index: 1;
+    margin: 50px 2%;
+    border-radius: 100%;
+    border: 2px dotted #FF00AE;
+    animation: rotate-360-y 20s ease-in-out infinite;
+}
+#photo-holder {
+   /* background-color: yellow; */
+   width: 95%;
+   height: 95%;
+   margin: 2% auto;
+   border-radius: 100%;
+   animation: rotate-360-y 20s ease-in-out infinite;
+}
+#about-hero .my-photo-box #photo-holder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px dotted #FF00AE;
+}
+#about-hero #hero-msg-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 70%;
+    height: 70%;
+    /* background-color: green; */
+    margin: 50px 20%;
+    margin-left: 22%;
+    border: 1px dotted #FF00AE;
+}
+#about-hero #hero-msg-box #hero-btn-holder {
+    width: 69%;
+    height: 100%;
+    /* background-color: orange; */
+    background-color: rgba(46, 0, 31, 0.5);
+    text-align: left;
+    border: 1px dotted #FF00AE;
+    padding: 0 10px 0 30%;
+}
+#about-hero #hero-msg-box .hero-msg h2 {
+    color: #1EDE01;
+    margin-bottom: -20px;
+}
+#about-hero #hero-msg-box .hero-msg p {
+    color: #FBF8F8;
+    font-weight: bold;
+}
+#about-hero #hero-msg-box .button-box {
+    color: #FBF8F8;
+}
+
+.faq-grid {
+    background: url('../images/about_me/mittermeier.jpg');
+    margin-top: 0;
+}
+.header-horizontal-rule {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#hr-header-2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.faq-grid h2 {
+    color: #1EDE01;
+}
+.question-stack {
+    background-color: rgba(46, 0, 31, 0.7);
+    padding: 1px 10px;
+    text-align: left;
+    margin: 2px 5px 2px 2px;
+    border: 1px dotted #1EDE01;
+}
+.question-stack h3 {
+    margin: 10px 5px -25px 15px;
+    color: #1EDE01;
+}
+.question-stack p {
+    color: #FBF8F8;
+}
+#end-of-question-stack {
+    text-align: center;
+    margin-bottom: -50px;
+}
+#end-of-question-stack a {
+    text-decoration: none;
+    color: #FBF8F8;
+}
+.question-stack #ask-me-btn {
+    margin: -10px auto 20px auto;
+    transition: background-color 0.5s;
+}
+.question-stack #ask-me-btn:hover {
+    background-color: #1EDE01;
+    color: #2F0020;
+}
+
+/* ANIMATION PANEL */
+@keyframes rotate-360-y {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* MEDIA QUARRY - SMALL-TAB AND LARGE-PHONE SCREEN */
+@media screen and (max-width: 890px) {
+    #about-hero .hero-msg #about-photo-box-2 {
+        display: block;
+        margin-left: 0 auto;
+    }
+    #about-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #about-hero #about-hero-box {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #about-hero #about-hero-box-2 img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #about-hero .my-photo-box {
+        display: none;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        /* background-color: red; */
+        width: 250px;
+        height: 300px;
+        z-index: 1;
+        margin: 30px auto;
+        border-radius: 0;
+        border: 2px dotted #FF00AE
+    }
+    #photo-holder {
+       /* background-color: yellow; */
+       width: 95%;
+       height: 95%;
+       margin: 7px auto;
+       border-radius: 0;
+    }
+    #about-hero .my-photo-box #photo-holder img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: 1px dotted #FF00AE;
+    }
+    #about-hero #hero-msg-box {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        /* background-color: green; */
+        margin: 0 0;
+        border: 0px dotted #FF00AE;
+    }
+    #about-hero #hero-msg-box #hero-btn-holder {
+        width: 98%;
+        height: 100%;
+        /* background-color: orange; */
+        background-color: rgba(46, 0, 31, 0.5);
+        text-align: center;
+        border: 1px dotted #FF00AE;
+        padding: 0 10px 0 0;
+    }
+    #about-hero #hero-msg-box .hero-msg h2 {
+        color: #1EDE01;
+        margin-bottom: -20px;
+    }
+    #about-hero #hero-msg-box .hero-msg p {
+        color: #FBF8F8;
+        font-weight: lighter;
+        margin-top: -30px;
+        padding: 20px 30px;
+    }
+    #about-hero #hero-msg-box .button-box {
+        color: #FBF8F8;
+        margin: -20px auto 20px auto;
+    }
+    
+}
+
+/* MEDIA QUARRY - SMALL-TAB AND LARGE-PHONE SCREEN */
+@media screen and (max-width: 489px) {
+    #about-hero {
+        margin-top: 60px;
+    }
+    #about-hero #hero-msg-box #hero-btn-holder section p{
+        font-weight: lighter;
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link type="image/png" rel="icon" href="images/logo.png">
+    <link type="text/css" rel="stylesheet" href="styles/about_me.css">
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -32,31 +33,42 @@
                 <img src="images/about_me/mittermeier.jpg" alt="Dark background">
             </div>
             <div class="my-photo-box" id="about-photo-box">
-                <img src="images/about_me/daniel_opute.jpg" alt="Photo of me (Daniel Opute)">
+                <div id="photo-holder">
+                    <img id="my_photos" src="images/about_me/daniel_opute.jpg" alt="Photo of me (Daniel Opute)">
+                </div>
             </div>
             <div id="hero-msg-box">
-                <section class="hero-msg">
-                    <h2 class="title">About Me</h2>
-                    <p>
-                        Welcome to Danism-Web's “About Me” section.<br>
-                        Hello! My name is Daniel C. Opute. I am a passionate web designer and an aspiring full-stack web developer 
-                        with a passion for creating user-friendly and responsive web-sites. My love for programming stems from my 
-                        passion and desire to build things. Right from my childhood, I have loved games and activities that require 
-                        creating or building stuff, and this has helped me develop into who I am today. It is nice having you here 
-                        in this section of my site. Here I will answer a list of questions you may want to ask me, and if you are not 
-                        satisfied with the answers given or would like to know more, then feel free to contact me. It is indeed a 
-                        delight to serve you. Thank you.
-                    </p>
-                </section>
-                <div class="button-box">
-                    <a href="contact_me.html">Contact Me</a>
+                <div id="hero-btn-holder">
+                    <section class="hero-msg">
+                        <h2 class="title">About Me</h2>
+                        <div class="my-photo-box" id="about-photo-box-2">
+                            <div id="photo-holder">
+                                <img src="images/about_me/daniel_opute.jpg" alt="Photo of me (Daniel Opute)">
+                            </div>
+                        </div>
+                        <p>
+                            <!-- Welcome to Danism-Web's “About Me” section.<br> -->
+                            Hello! My name is Daniel C. Opute. I am a passionate web designer and an aspiring full-stack web developer 
+                            with a passion for creating user-friendly and responsive web-sites. My love for programming stems from my 
+                            passion and desire to build things. Right from my childhood, I have loved games and activities that require 
+                            creating or building stuff, and this has helped me develop into who I am today. It is nice having you here 
+                            in this section of my site. Here I will answer a list of questions you may want to ask me, and if you are not 
+                            satisfied with the answers given or would like to know more, then feel free to contact me. It is indeed a 
+                            delight to serve you. Thank you.
+                        </p>
+                    </section>
+                    <a href="contact_me.html"></a>
+                        <div class="button-box">
+                            Contact Me
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <main class="about-grid">
+        <main class="faq-grid">
+            <hr class="header-horizontal-rule">
             <h2><b>Frequently Asked Questions About Me</b></h2>
-            <hr class="header-horizontal-rule">
-            <hr class="header-horizontal-rule">
+            <hr class="header-horizontal-rule" id="hr-header-2">
             <!--Question Stack-->
             <div class="question-stack">
                 <h3>How long have you been into web development?</h3>
@@ -158,9 +170,11 @@
                 <p>
                     Want to ask me a question or learn more about me? Click the button below.
                 </p>
-                <div class="button-box">
-                    <a href="contact_me.html">Ask Me</a>
-                </div>
+                <a href="contact_me.html">
+                    <div class="button-box" id="ask-me-btn">
+                        Ask Me
+                    </div>
+                </a>
             </div>
         </main>
         <footer>
@@ -174,6 +188,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>
