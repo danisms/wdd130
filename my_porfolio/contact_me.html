@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link type="image/png" rel="icon" href="images/logo.png">
+    <link type="text/css" rel="stylesheet" href="styles/contact.css">
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -50,42 +51,44 @@
                 <div class="contact-content" id="call-content">
                     <a href="tel:+2348073956165">
                         <img src="images/contact_me/dark_phone.png" alt="phone">
-                        +234-8073956165
+                        +234-8073956165 <hr class="horizontal-rule">
                     </a>
                 </div>
                 <div class="contact-content" id="email-content">
                     <a href="mailto:danielcopute@gmail.com">
                         <img src="images/contact_me/email.png" alt="email">
-                        danielcopute@gmail.com
+                        danielcopute@gmail.com <hr class="horizontal-rule">
                     </a>
                 </div>
                 <div class="contact-content" id="facebook-content">
                     <a href="https://www.facebook.com/Daniel.C.Opute/">
                         <img src="images/contact_me/facebook.png" alt="facebook icon">
-                        @facebook.com
+                        @facebook.com <hr class="horizontal-rule">
                     </a>
                 </div>
                 <div class="contact-content" id="linkedin-content">
                     <a href="https://www.linkedin.com/in/danielopute/">
                         <img src="images/contact_me/linkedin.png" alt="linkedin icon">
-                        @linkedin.com
+                        @linkedin.com <hr class="horizontal-rule">
                     </a>
                 </div>
                 <div class="contact-content" id="upwork-content">
                     <a href="https://www.upwork.com/services/product/development-it-figma-or-psd-converted-to-a-tasteful-refined-responsive-website-design-1568348217643474944">
                         <img src="images/contact_me/upwork.png" alt="upwork icon">
-                        @upwork.com
+                        @upwork.com <hr class="horizontal-rule">
                     </a>
                 </div>
                 <div class="contact-content" id="whatsapp-content">
                     <a href="https://wa.me/+2348073956165">
                         <img src="images/contact_me/whatsapp.jpg" alt="whatsapp icon">
-                        WhatsApp.com
+                        WhatsApp.com <hr class="horizontal-rule">
                     </a>
                 </div>
             </div>
             <!--VERTICAL LINE DEMARCATOR-->
             <div id="vertical-line"></div>
+            <!--HORIZONTAL LINE DEMARCATOR FOR SMALL SCREEN-->
+            <hr class="horizontal-rule" id="hr-demarcator">
             <!--SECTION 2 BOX-->
             <div class="contact-content-box" id="contact-box">
                 <h3 class="contact-h3">Drop a Message</h3>
@@ -94,11 +97,15 @@
                     action="https://script.google.com/macros/s/AKfycbxshFOI02RWVgVv902x0ZHzGLeesCyRG38HbG50wrmnCDOUvmFNnhlUUxmbdcq8U316Kg/exec">
 
                     <textarea id="contact-message-box" name="Request" placeholder="Do you have a question for me?" required></textarea>
-                    <h4>Name: </h4><input type="text" name="Name" placeholder="Full-Name" required>
-                    <h4>Email: </h4><input type="email" name="Email" placeholder="youremail@example.com" required>
+                    <div id="name-section">
+                        <h4>Name: </h4><input id="name-input" type="text" name="Name" placeholder="Full-Name" required>
+                    </div>
+                    <div id="email-section">
+                        <h4>Email: </h4><input type="email" name="Email" placeholder="youremail@example.com" required>
+                    </div>
                     <!--Submit button-->
-                    <button type="submit" id="submit-button">SEND</button>
-                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <button type="submit" class="book" id="submit-button">SEND</button>
+                    <!-- Customize the Thankyou Message People See when they submit the form: -->
                     <div class="thankyou_message" id="message-display" style="display:none;">
                         <h2>Sent successfully!</h2>
                         <p>
