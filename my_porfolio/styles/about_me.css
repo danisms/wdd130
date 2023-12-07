@@ -78,7 +78,10 @@
     color: #FBF8F8;
     font-weight: bold;
 }
-#about-hero #hero-msg-box .button-box {
+#about-hero #hero-msg-box #hero-btn-holder a {
+    text-decoration: none;
+}
+#about-hero #hero-msg-box a .button-box {
     color: #FBF8F8;
 }
 
@@ -143,7 +146,7 @@
 @media screen and (max-width: 890px) {
     #about-hero .hero-msg #about-photo-box-2 {
         display: block;
-        margin-left: 0 auto;
+        margin-left: auto;
     }
     #about-hero {
         display: grid;
@@ -174,14 +177,14 @@
         border-radius: 0;
         border: 2px dotted #FF00AE
     }
-    #photo-holder {
+    #photo-holder-2 {
        /* background-color: yellow; */
        width: 95%;
        height: 95%;
        margin: 7px auto;
        border-radius: 0;
     }
-    #about-hero .my-photo-box #photo-holder img {
+    #about-hero .my-photo-box #photo-holder-2 img {
         width: 100%;
         height: 100%;
         border-radius: 0;
