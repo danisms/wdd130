@@ -110,6 +110,11 @@ main {
     font-size: 1.3em;
 }
 
+.img-box img {
+    border-radius: 10px;
+    height: 100%;
+}
+
 /* MEDIA QUARRY - SMALL-TAB AND LARGE-PHONE SCREEN */
 @media screen and (max-width: 890px) {
     .summary-box {
