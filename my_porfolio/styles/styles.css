@@ -589,7 +589,7 @@ footer .h4-inline {
 }
 }
 
-/* MEDIA QUARRY - SMALL-PHONE AND LARGE-PHONE SCREEN */
+/* MEDIA QUARRY - SMALL-PHONE SCREEN */
 @media screen and (max-width: 489px) {
 /** CONTACT ME BOX MODAL **/
 .modal {
