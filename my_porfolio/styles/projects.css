@@ -120,7 +120,7 @@ iframe {
 }
 .img-box img {
     border-radius: 10px;
-    height: 100%;
+    height: auto;
 }
 
 /* MEDIA QUARRY - SMALL-TAB AND LARGE-PHONE SCREEN */
